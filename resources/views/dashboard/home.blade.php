@@ -12,3 +12,7 @@
         </div>
     </section>
 @endsection
+
+@section('sidebar')
+    @parent
+@endsection

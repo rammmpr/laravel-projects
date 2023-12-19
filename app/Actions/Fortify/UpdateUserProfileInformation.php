@@ -28,7 +28,7 @@ class UpdateUserProfileInformation implements UpdatesUserProfileInformation
                 Rule::unique('users')->ignore($user->id),
             ],
 
-            'phone' => 'nullable|numeric|digits_between:10,12',
+            'phone' => 'nullable|numeric|digits_between:10,13',
 
         ])->validateWithBag('updateProfileInformation');
 

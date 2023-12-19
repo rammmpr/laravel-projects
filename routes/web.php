@@ -25,5 +25,5 @@ Route::get('/register', function () {
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('home', function () {
         return view('dashboard.home');
-    })->name('home');
+    })->name('home')->middleware('can:dashboard');
 });
